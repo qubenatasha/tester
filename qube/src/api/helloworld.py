@@ -30,6 +30,6 @@ class HelloWorld(Resource):
         parser.add_argument('sth')
         args = parser.parse_args()
         name = name if name is not None else 'test'
-        sth = args['sth'] if args['sth'] is not None else 'hello world'
+        sth = args['sth'] if args['sth'] is not None else 'hello Larry'
 
         return {name: sth}
